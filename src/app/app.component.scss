@@ -1,0 +1,39 @@
+.dot-frame
+{
+    position: relative;
+    height: 36px;
+    width: 36px;
+    overflow: hidden;
+    border-radius:50%;
+    margin: 6px;
+    padding: 0;
+    border: 1px solid rgba(0,0,0,.2);
+    background-size: contain;
+}
+
+[mat-menu-item] {
+    flex: 0 0 auto;
+    padding: 0px;
+    overflow: hidden;
+    height: auto;
+}
+
+.uber {
+    background-image: url(/assets/img/uber_eats.jpg)
+}
+
+.doordash {
+    background-image: url(/assets/img/door_dash.png)
+}
+
+.yelp {
+    background-image: url(/assets/img/yelp.png)
+}
+
+.zomato {
+    background-image: url(/assets/img/zomato.png)
+}
+
+.facebook {
+    background-image: url(/assets/img/facebook.png)
+}

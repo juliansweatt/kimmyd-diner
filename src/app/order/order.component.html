@@ -1,8 +1,8 @@
 <mat-card>
     <mat-card-header>
         <div mat-card-avatar class="kimmyd_logo"></div>
-        <mat-card-title>Order by Phone or FAX</mat-card-title>
-        <mat-card-subtitle>Kimmy D's Delivery</mat-card-subtitle>
+        <mat-card-title>Kimmy D's Delivery</mat-card-title>
+        <mat-card-subtitle>Order by Phone or FAX</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
         <p>
@@ -21,8 +21,8 @@
 <mat-card>
     <mat-card-header>
         <div mat-card-avatar class="uber_eats_logo"></div>
-        <mat-card-title>Order Online</mat-card-title>
-        <mat-card-subtitle>Uber Eats</mat-card-subtitle>
+        <mat-card-title>Uber Eats</mat-card-title>
+        <mat-card-subtitle>Order Online</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
         <p>
@@ -32,5 +32,22 @@
     <mat-card-actions>
         <a mat-button color="accent" target="_blank" href="https://www.ubereats.com/en-US/tampa/food-delivery/kimmy-ds-49th-street-cafe-pinellas-park/wvMzUI6QSGOvyVCLE4hfnQ/">{{isOpen(this.hours) ? 'ORDER NOW' : 'PREVIEW ORDER'}}</a>
         <a mat-button target="_blank" href="https://about.ubereats.com/">INFO</a>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="door_dash_logo"></div>
+        <mat-card-title>Door Dash</mat-card-title>
+        <mat-card-subtitle>Order Online</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            Order from your computer or mobile device. A Door Dash delivery driver will pick up your order from Kimmy D's and deliver it to you. Subject to Door Dash fees.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button color="accent" target="_blank" href="https://www.doordash.com/store/kimmy-d-s-49th-street-cafe-clearwater-244421/">{{isOpen(this.hours) ? 'ORDER NOW' : 'PREVIEW ORDER'}}</a>
+        <a mat-button target="_blank" href="https://www.doordash.com/about/">INFO</a>
     </mat-card-actions>
 </mat-card>

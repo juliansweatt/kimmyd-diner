@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent, } from './menu/menu.component';
 
-import { MatToolbarModule, MatButtonModule, MatGridListModule, MatDialogModule, MatCardModule, MatIconModule, MatTooltipModule} from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatGridListModule, MatDialogModule, MatCardModule, MatIconModule, MatTooltipModule, MatMenuModule} from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -35,6 +35,7 @@ import { OrderComponent } from './order/order.component';
     MatCardModule,
     MatIconModule,
     MatTooltipModule,
+    MatMenuModule,
     HttpClientModule
   ],
   providers: [],
