@@ -1,0 +1,36 @@
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="kimmyd_logo"></div>
+        <mat-card-title>Order by Phone or FAX</mat-card-title>
+        <mat-card-subtitle>Kimmy D's Delivery</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            Kimmy D's offers <b>free delivery Monday through Friday, 9:00am to 1:30pm</b>. A 10¢ container charge may be applied. <b>$5.00 minimum</b> order in most areas. <b>Gratuity not included</b>. Catering available.
+        </p>
+        <ul>
+            <li><b>Phone:</b><a class="no-format-link" href="tel:1-727-572-4949"> 1-727-572-4949</a></li>
+            <li><b>FAX:</b> 1-727-571-1986</li>
+        </ul>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button color="{{isOpen(this.hours) ? 'accent' : 'warn'}}" href="tel:1-727-572-4949" [disabled]="! isOpen(this.hours)" matTooltip="{{isOpen(this.hours) ? '1-727-572-4949' : 'Delivery Not Available (After Delivery Hours)'}}">CALL NOW</a>
+    </mat-card-actions>
+</mat-card>
+
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="uber_eats_logo"></div>
+        <mat-card-title>Order Online</mat-card-title>
+        <mat-card-subtitle>Uber Eats</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            Order from your computer or mobile device. An Uber Eats delivery driver will pick up your order from Kimmy D's and deliver it to you. Subject to Uber fees.
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <a mat-button color="accent" target="_blank" href="https://www.ubereats.com/en-US/tampa/food-delivery/kimmy-ds-49th-street-cafe-pinellas-park/wvMzUI6QSGOvyVCLE4hfnQ/">{{isOpen(this.hours) ? 'ORDER NOW' : 'PREVIEW ORDER'}}</a>
+        <a mat-button target="_blank" href="https://about.ubereats.com/">INFO</a>
+    </mat-card-actions>
+</mat-card>
