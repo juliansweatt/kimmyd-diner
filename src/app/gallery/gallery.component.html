@@ -1,3 +1,8 @@
-<p>
-  gallery works!
-</p>
+<mat-grid-list cols="4" rowHeight="100px" [gutterSize]="'10px'" style="margin-top: 10px">
+  <mat-grid-tile
+    *ngFor="let photo of galleryPhotos"
+    [colspan]="1"
+    [rowspan]="2">
+    <img (click)="openDialog(photo)" src="assets/gallery/{{photo}}">
+  </mat-grid-tile>
+</mat-grid-list>
