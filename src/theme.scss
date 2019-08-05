@@ -3,7 +3,7 @@
 
 // Teal Theme (Light)
 $primary: mat-palette($mat-teal, 500);
-$accent:  mat-palette($mat-blue-grey, 900);
-$warn:    mat-palette($mat-red);
+$accent:  mat-palette($mat-teal, A400);
+$warn:    mat-palette($mat-red, 900);
 $teal-theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($teal-theme);
