@@ -11,11 +11,7 @@ import { MatToolbarModule, MatButtonModule, MatGridListModule, MatDialogModule }
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
-<<<<<<< HEAD
-import { MenuChoicesComponent } from './menu/menu-choices/menu-choices.component';
-=======
 import { ImageViewDialog } from './gallery/gallery.component';
->>>>>>> f4a8e64c9fdbee78d0745ae303c74c63772aa2fa
 
 @NgModule({
   declarations: [
@@ -24,7 +20,6 @@ import { ImageViewDialog } from './gallery/gallery.component';
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    MenuChoicesComponent,
     ImageViewDialog
   ],
   imports: [

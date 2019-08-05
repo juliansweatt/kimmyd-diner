@@ -2,11 +2,19 @@
     <div class = "bg-light border-right" id = "sidebar wrapper">
       <div class = "sidebar-heading">Menu</div>
       <div class = "list-group list-group-flush">
-        <a href="breakfast" class = "list-group-item list-group-item-action bg-light" [routerLink]="[ '/breakfast' ]">Breakfast</a>
-        <a href="lunch" class = "list-group-item list-group-item-action bg-light" [routerLink]="[ '/lunch' ]">Lunch</a>
+        <a href="breakfast" class = "list-group-item list-group-item-action bg-light">Breakfast</a>
+        <a href="lunch" class = "list-group-item list-group-item-action bg-light">Lunch</a>
       </div>
     </div>
     <div id = "page-content-wrapper">
-      <app-menu-choices [option] = "option"></app-menu-choices>
+        <li class = "menu-list" *ngIf = "option === 'breakfast'">
+            <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-4_orig.jpg">
+        </li>
+        <li class = "menu-list" *ngIf = "option === 'lunch'">
+            <a>
+                <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-2_orig.jpg">
+                <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-3_orig.jpg">
+            </a>
+        </li>
     </div>
 </div>
