@@ -10,6 +10,7 @@ import { MatToolbarModule, MatButtonModule } from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { MenuChoicesComponent } from './menu/menu-choices/menu-choices.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MenuComponent,
     HomeComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
+    MenuChoicesComponent
   ],
   imports: [
     BrowserModule,
