@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+    mat-toolbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100% !important;
+        font-size: 8px;
+    }
+    
+    button {
+        font-size: 8px;
+        width: 5px!important;
+        padding: 2px!important;
+    }
+
+    body {
+        margin: 0px;
+    }
+}

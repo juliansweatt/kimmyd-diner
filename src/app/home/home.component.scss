@@ -51,8 +51,77 @@
 .homeServices {
     display: inline-block;
     text-align: left;
-    height: 300px;
+    vertical-align: top;
     line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 20%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1499px) {
+    .homeFoodPic {
+        padding: 0px;
+        vertical-align: top;
+    }
+
+    #pic3 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px ) {
+    #pic3 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    .homeServices {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #homeLogo {
+        width: 50%;
+        padding-top: 50px;
+        padding-bottom: 5px;
+    }
+
+    #homeTitle {
+        width: 100%;
+    }
+
+    #homeSignatures {
+        width: 100%;
+    }
+
+    #homeContact {
+        width: 100%;
+    }
+
+    .homeFoodPicBackground {
+        display: block;
+        width: 90%;
+    }
+
+    .homeFoodPic {
+        width: 90%;
+        height: 90%;
+    }
+
+    .homeServices {
+        display: block;
+        width: 100%;
+    }
 }
