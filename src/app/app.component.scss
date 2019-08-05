@@ -1,6 +1,5 @@
 @media screen and (max-width: 767px) {
     mat-toolbar {
-        position: fixed;
         top: 0;
         left: 0;
         z-index: 2;
@@ -17,6 +16,12 @@
     body {
         margin: 0px;
     }
+}
+
+mat-toolbar {
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .dot-frame
