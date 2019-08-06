@@ -6,7 +6,51 @@
     <button [routerLink]="[ '/about' ]" mat-button>About</button>
     <button [routerLink]="[ '/menu' ]" mat-button>Menu</button>
     <button [routerLink]="[ '/gallery' ]" mat-button>Gallery</button>
+    <button [routerLink]="[ '/order' ]" mat-button color="accent">Order</button>
+    <span style="flex: 1 1"></span>
+    <button mat-icon-button [mat-menu-trigger-for]="socialMedia" matTooltip="Find Us On...">
+        <mat-icon>share</mat-icon>
+      </button>
   </mat-toolbar-row>
 </mat-toolbar>
+<mat-menu #socialMedia="matMenu">
+    <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <div mat-menu-item>
+            <a href="https://www.ubereats.com/en-US/tampa/food-delivery/kimmy-ds-49th-street-cafe-pinellas-park/wvMzUI6QSGOvyVCLE4hfnQ/">
+              <div class="dot-frame uber"></div>
+            </a>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div mat-menu-item>
+            <a href="https://www.doordash.com/store/kimmy-d-s-49th-street-cafe-clearwater-244421/">
+              <div class="dot-frame doordash"></div>
+            </a>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div mat-menu-item>
+            <a href="https://www.facebook.com/pages/category/Diner/Kimmy-Ds-Family-Diner-111589788877512/">
+              <div class="dot-frame facebook"></div>
+            </a>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div mat-menu-item>
+            <a href="https://www.yelp.com/biz/kimmy-ds-49th-street-cafe-clearwater">
+              <div class="dot-frame yelp"></div>
+            </a>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div mat-menu-item>
+            <a href="https://www.zomato.com/tampa-bay/kimmy-ds-49th-street-cafe-clearwater/">
+              <div class="dot-frame zomato"></div>
+            </a>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+  </mat-menu>
 
 <router-outlet></router-outlet>
