@@ -10,7 +10,11 @@ const routes: Routes = [
   { path: 'menu', component: MenuComponent },
   { path: 'home', component: HomeComponent },
   { path: 'gallery', component: GalleryComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'menu/breakfast', component: MenuComponent},
+  { path: 'menu/lunch', component: MenuComponent},
+  { path: 'menu/lunch/front', component: MenuComponent},
+  { path: 'menu/lunch/back', component: MenuComponent}
 ];
 
 @NgModule({

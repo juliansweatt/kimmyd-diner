@@ -1,0 +1,55 @@
+.sidebar, .menu-list {
+    float: left;
+}
+
+.sidebar {
+    margin-top: 20px;
+}
+
+.menu-list {
+    margin: 20px;
+}
+
+.sidebar, img {
+    display: inline-flex;
+}
+
+hr {
+    color: white;
+    margin: 0;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+.nav-title, .nav-item {
+    background-color: #009688;
+    color: white;
+    font-family: sans-serif;
+    list-style: none;
+    padding: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover, .nav-link:active {
+    text-decoration: underline;
+}
+
+.nav-item.nav-dropdown {
+    padding: 0;
+}
+
+.nav-link.nav-dropdown-toggle {
+    margin: 0 20px;
+}
+
+.nav-dropdown-items {
+    padding: 0;
+}

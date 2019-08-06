@@ -1,20 +1,48 @@
+<hr>
 <div class = "d-flex" id = "wrapper">
-    <div class = "bg-light border-right" id = "sidebar wrapper">
-      <div class = "sidebar-heading">Menu</div>
-      <div class = "list-group list-group-flush">
-        <a href="breakfast" class = "list-group-item list-group-item-action bg-light">Breakfast</a>
-        <a href="lunch" class = "list-group-item list-group-item-action bg-light">Lunch</a>
-      </div>
+
+    <div class = "sidebar">
+        <nav class = "sidebar-nav">
+            <ul class = "nav">
+                <li class = "nav-title">Menu Options</li>
+                <hr>
+                <li class = "nav-item">
+                    <a class = "nav-link"
+                       href = "menu/breakfast"
+                       (click) = "setOption('breakfast')">Breakfast</a>
+                </li>
+                <hr>
+                <li class = "nav-item nav-dropdown">
+                    <a class = "nav-link nav-dropdown-toggle" href = "menu/lunch">Lunch</a>
+                    <hr>
+                    <ul class = "nav-dropdown-items">
+                        <li class = "nav-item">
+                            <a class = "nav-link"
+                               href = "menu/lunch/front"
+                               (click) = "setOption('lunch-front')">Front</a>
+                        </li>
+                        <hr>
+                        <li class = "nav-item">
+                            <a class = "nav-link"
+                               href = "menu/lunch/back"
+                               (click) = "setOption('lunch-back')">Back</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
+
     <div id = "page-content-wrapper">
         <li class = "menu-list" *ngIf = "option === 'breakfast'">
             <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-4_orig.jpg">
         </li>
-        <li class = "menu-list" *ngIf = "option === 'lunch'">
-            <a>
-                <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-2_orig.jpg">
-                <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-3_orig.jpg">
-            </a>
+        <li class = "menu-list" *ngIf = "option === 'lunch-front'">
+            <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-2_orig.jpg">
+        </li>
+        <li class = "menu-list" *ngIf = "option === 'lunch-back'">
+            <img src = "http://www.kimmyds.com/uploads/3/4/3/4/34345928/rev1-denise-kimmyd-page-3_orig.jpg">
         </li>
     </div>
+
 </div>

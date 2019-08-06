@@ -13,4 +13,9 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  setOption(option)
+  {
+    this.option = option;
+  }
+
 }
