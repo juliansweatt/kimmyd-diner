@@ -13,11 +13,9 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'about', component: AboutComponent },
   { path: 'menu/breakfast', component: MenuComponent},
-  { path: 'menu/lunch', component: MenuComponent},
   { path: 'menu/lunch/front', component: MenuComponent},
-  { path: 'menu/lunch/back', component: MenuComponent}
+  { path: 'menu/lunch/back', component: MenuComponent},
   { path: 'order', component: OrderComponent }
->>>>>>> d89a7d3b559cc3d4b4cc3e82ef04685713a15045
 ];
 
 @NgModule({
