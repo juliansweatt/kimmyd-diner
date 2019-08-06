@@ -12,9 +12,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'menu/breakfast', component: MenuComponent},
-  { path: 'menu/lunch/front', component: MenuComponent},
-  { path: 'menu/lunch/back', component: MenuComponent},
   { path: 'order', component: OrderComponent }
 ];
 
