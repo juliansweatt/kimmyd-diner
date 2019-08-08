@@ -13,7 +13,6 @@ export class GalleryService {
   constructor(private http: HttpClient) { 
     this.http.get('assets/gallery/assetIndex.json')
       .subscribe((data:any) => {
-        console.log("Got Data", data.files);
         if(data)
         {
           this.fileList = data.files;

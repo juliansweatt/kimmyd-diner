@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
 
   <mat-toolbar-row>
-    <span>Kimmy D's Diner</span>
+    <span [routerLink]="[ '/home' ]" style="cursor: pointer;">Kimmy D's Diner</span>
     <button [routerLink]="[ '/home' ]" mat-button>Home</button>
     <button [routerLink]="[ '/about' ]" mat-button>About</button>
     <button [routerLink]="[ '/menu' ]" mat-button>Menu</button>
@@ -9,8 +9,8 @@
     <button [routerLink]="[ '/order' ]" mat-button color="accent">Order</button>
     <span style="flex: 1 1"></span>
     <button mat-icon-button [mat-menu-trigger-for]="socialMedia" matTooltip="Find Us On...">
-        <mat-icon>share</mat-icon>
-      </button>
+      <mat-icon>share</mat-icon>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-menu #socialMedia="matMenu">
