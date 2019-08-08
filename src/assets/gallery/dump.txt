@@ -1,7 +1,0 @@
-assetIndex.json
-customers.jpg
-customers_1.jpg
-customers_2.jpg
-demetra.jpg
-dump.txt
-halloween.jpg

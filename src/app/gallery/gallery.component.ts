@@ -34,7 +34,7 @@ export class ImageViewDialog {
 
   constructor(
     public dialogRef: MatDialogRef<ImageViewDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: Object) {}
+    @Inject(MAT_DIALOG_DATA) public data) {}
 
   onNoClick(): void {
     this.dialogRef.close();
